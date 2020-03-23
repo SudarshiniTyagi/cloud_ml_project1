@@ -1,0 +1,7 @@
+=> creating model 'alexnet'
+Epoch: [0][ 0/40]	Time 25.740 (25.740)	Data 13.608 (13.608)	Loss 6.9080e+00 (6.9080e+00)	Acc@1   0.00 (  0.00)	Acc@5   0.59 (  0.59)
+max gpu memory used = 1727702016
+Total training time: 0:02:22.098781
+Test: [ 0/20]	Time 14.808 (14.808)	Loss 6.9063e+00 (6.9063e+00)	Acc@1   0.00 (  0.00)	Acc@5   0.20 (  0.20)
+ * Acc@1 0.130 Acc@5 0.570
+Total validate time: 0:01:04.862051

@@ -1,0 +1,9 @@
+==69449== NVPROF is profiling process 69449, command: /home/st3688/pytorch_env/py3.6.3/bin/python examples/imagenet/main.py -a alexnet -b 8 --lr 0.01 --epochs 1 /scratch/st3688/imagenet_small_subset/
+=> creating model 'alexnet'
+==69449== Profiling application: /home/st3688/pytorch_env/py3.6.3/bin/python examples/imagenet/main.py -a alexnet -b 8 --lr 0.01 --epochs 1 /scratch/st3688/imagenet_small_subset/
+==69449== Profiling result:
+No kernels were profiled.
+No API activities were profiled.
+==69449== Warning: Some profiling data are not recorded. Make sure cudaProfilerStop() or cuProfilerStop() is called before application exit to flush profile data.
+======== Error: Application received signal 9
+slurmstepd: error: Detected 474 oom-kill event(s) in step 8469042.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.

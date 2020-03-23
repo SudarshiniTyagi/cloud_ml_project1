@@ -1,0 +1,7 @@
+=> creating model 'resnet18'
+Epoch: [0][ 0/79]	Time 21.649 (21.649)	Data  9.244 ( 9.244)	Loss 7.0298e+00 (7.0298e+00)	Acc@1   0.00 (  0.00)	Acc@5   0.39 (  0.39)
+max gpu memory used = 2908607488
+Total training time: 0:02:33.894182
+Test: [ 0/40]	Time  7.889 ( 7.889)	Loss 6.9397e+00 (6.9397e+00)	Acc@1   0.00 (  0.00)	Acc@5   0.39 (  0.39)
+ * Acc@1 0.280 Acc@5 1.070
+Total validate time: 0:01:15.491175

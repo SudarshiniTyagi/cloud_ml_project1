@@ -1,0 +1,32 @@
+==32325== NVPROF is profiling process 32325, command: /home/st3688/pytorch_env/py3.6.3/bin/python examples/imagenet/main.py -a alexnet -b 1024 --lr 0.01 --multiprocessing-distributed --epochs 1 /scratch/st3688/imagenet_small_subset/
+Use GPU: 3 for training
+Use GPU: 1 for training
+Use GPU: 2 for training
+Use GPU: 0 for training
+Traceback (most recent call last):
+  File "examples/imagenet/main.py", line 444, in <module>
+    main()
+  File "examples/imagenet/main.py", line 109, in main
+    mp.spawn(main_worker, nprocs=ngpus_per_node, args=(ngpus_per_node, args))
+  File "/home/st3688/pytorch_env/py3.6.3/lib/python3.6/site-packages/torch/multiprocessing/spawn.py", line 171, in spawn
+    while not spawn_context.join():
+  File "/home/st3688/pytorch_env/py3.6.3/lib/python3.6/site-packages/torch/multiprocessing/spawn.py", line 118, in join
+    raise Exception(msg)
+Exception: 
+
+-- Process 0 terminated with the following error:
+Traceback (most recent call last):
+  File "/home/st3688/pytorch_env/py3.6.3/lib/python3.6/site-packages/torch/multiprocessing/spawn.py", line 19, in _wrap
+    fn(i, *args)
+  File "/home/st3688/examples/imagenet/main.py", line 130, in main_worker
+    world_size=args.world_size, rank=args.rank)
+  File "/home/st3688/pytorch_env/py3.6.3/lib/python3.6/site-packages/torch/distributed/distributed_c10d.py", line 397, in init_process_group
+    store, rank, world_size = next(rendezvous_iterator)
+  File "/home/st3688/pytorch_env/py3.6.3/lib/python3.6/site-packages/torch/distributed/rendezvous.py", line 120, in _tcp_rendezvous_handler
+    store = TCPStore(result.hostname, result.port, world_size, start_daemon)
+RuntimeError: Network is unreachable
+
+==32325== Profiling application: /home/st3688/pytorch_env/py3.6.3/bin/python examples/imagenet/main.py -a alexnet -b 1024 --lr 0.01 --multiprocessing-distributed --epochs 1 /scratch/st3688/imagenet_small_subset/
+==32325== Profiling result:
+No kernels were profiled.
+======== Error: Application returned non-zero code 1

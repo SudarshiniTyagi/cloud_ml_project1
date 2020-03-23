@@ -1,0 +1,18 @@
+=> creating model 'resnet18'
+Traceback (most recent call last):
+  File "examples/imagenet/main.py", line 444, in <module>
+    main()
+  File "examples/imagenet/main.py", line 112, in main
+    main_worker(args.gpu, ngpus_per_node, args)
+  File "examples/imagenet/main.py", line 245, in main_worker
+    train(train_loader, model, criterion, optimizer, epoch, args)
+  File "examples/imagenet/main.py", line 312, in train
+    loss.backward()
+  File "/home/st3688/pytorch_env/py3.6.3/lib/python3.6/site-packages/torch/tensor.py", line 195, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph)
+  File "/home/st3688/pytorch_env/py3.6.3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    allow_unreachable=True)  # allow_unreachable flag
+  File "/home/st3688/pytorch_env/py3.6.3/lib/python3.6/site-packages/torch/utils/data/_utils/signal_handling.py", line 66, in handler
+    _error_if_any_worker_fails()
+RuntimeError: DataLoader worker (pid 161958) is killed by signal: Killed. 
+slurmstepd: error: Detected 3 oom-kill event(s) in step 8463446.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.
