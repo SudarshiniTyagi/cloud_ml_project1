@@ -6,7 +6,8 @@ This code contains the following two files:
 
 Steps:
 1. `git clone <this repo>`
+2. Open file `run_k80.s` and replace `~/pytorch_env/py3.6.3/bin/python` with the python you are using which has all the required dependencies for running imagenet (nothing fancy, mostly it should just have `torch`)
 2. If running on k80, submit the batch job using `sbatch run_k80.s`
-3. Similarly, if running on p40, submit the batch job using `sbatch run_p40.s`
+3. Similarly, if running on p40, change the python path and submit the batch job using `sbatch run_p40.s`
 
 
